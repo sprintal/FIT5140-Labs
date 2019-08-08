@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m2f-by-DWL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GoT Name Creator-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="GoT Name Creator" id="BYZ-38-t0r" customClass="ViewController" customModule="FIT5140_Week02_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvR-Aj-8ah">
+                                <rect key="frame" x="16" y="80" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOk-52-CNI">
+                                <rect key="frame" x="16" y="117" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us2-yn-hTb">
+                                <rect key="frame" x="16" y="163" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SKk-gx-4MW">
+                                <rect key="frame" x="16" y="200" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5P-RX-mGu">
+                                <rect key="frame" x="16" y="246" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="029-1N-v2A">
+                                <rect key="frame" x="16" y="621" width="343" height="30"/>
+                                <state key="normal" title="General House Details"/>
+                                <connections>
+                                    <segue destination="S45-wm-zFG" kind="show" identifier="createHouseSegue" id="Knv-2M-nuc"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nhh-d0-jbX">
+                                <rect key="frame" x="16" y="283" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Lannister"/>
+                                    <segment title="Tully"/>
+                                    <segment title="Tyrell"/>
+                                    <segment title="Stark"/>
+                                    <segment title="Baratheon"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IvR-Aj-8ah" secondAttribute="trailing" constant="16" id="21n-Rn-92n"/>
+                            <constraint firstItem="029-1N-v2A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3Ph-ST-zJw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="029-1N-v2A" secondAttribute="trailing" constant="16" id="3ca-Zl-ofS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q5P-RX-mGu" secondAttribute="trailing" constant="16" id="47P-Vo-EWE"/>
+                            <constraint firstItem="kOk-52-CNI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5ic-sI-14m"/>
+                            <constraint firstItem="us2-yn-hTb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CRC-UH-PyD"/>
+                            <constraint firstItem="Nhh-d0-jbX" firstAttribute="top" secondItem="q5P-RX-mGu" secondAttribute="bottom" constant="16" id="HOy-0V-uBy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nhh-d0-jbX" secondAttribute="trailing" constant="16" id="JPg-fC-JNM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="us2-yn-hTb" secondAttribute="trailing" constant="16" id="Qfo-4e-wyj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kOk-52-CNI" secondAttribute="trailing" constant="16" id="ZlC-2x-7eL"/>
+                            <constraint firstItem="SKk-gx-4MW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="elz-tZ-NPR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="029-1N-v2A" secondAttribute="bottom" constant="16" id="gkd-jH-I8E"/>
+                            <constraint firstItem="SKk-gx-4MW" firstAttribute="top" secondItem="us2-yn-hTb" secondAttribute="bottom" constant="16" id="nKl-xN-mev"/>
+                            <constraint firstItem="q5P-RX-mGu" firstAttribute="top" secondItem="SKk-gx-4MW" secondAttribute="bottom" constant="16" id="qek-fb-WmS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SKk-gx-4MW" secondAttribute="trailing" constant="16" id="qiW-x0-i5X"/>
+                            <constraint firstItem="IvR-Aj-8ah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="t29-Xk-cED"/>
+                            <constraint firstItem="kOk-52-CNI" firstAttribute="top" secondItem="IvR-Aj-8ah" secondAttribute="bottom" constant="16" id="uh4-vh-aeE"/>
+                            <constraint firstItem="q5P-RX-mGu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wFi-35-o8l"/>
+                            <constraint firstItem="IvR-Aj-8ah" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="zCj-uo-HhY"/>
+                            <constraint firstItem="us2-yn-hTb" firstAttribute="top" secondItem="kOk-52-CNI" secondAttribute="bottom" constant="16" id="zNY-er-Kg1"/>
+                            <constraint firstItem="Nhh-d0-jbX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zhz-Sv-69t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PNu-XT-ILh"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="SKk-gx-4MW" id="MK1-ED-pMR"/>
+                        <outlet property="houseSegmentedControl" destination="Nhh-d0-jbX" id="9Li-rv-Ipe"/>
+                        <outlet property="nameTextField" destination="kOk-52-CNI" id="CzL-Yz-hvN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="-564"/>
+        </scene>
+        <!--House Details-->
+        <scene sceneID="ytY-Hb-9mm">
+            <objects>
+                <viewController id="S45-wm-zFG" customClass="HouseViewController" customModule="FIT5140_Week02_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LjE-g0-kcY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tho-vi-Nkc">
+                                <rect key="frame" x="16" y="80" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrT-hP-v0K">
+                                <rect key="frame" x="16" y="117" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBU-IS-syl">
+                                <rect key="frame" x="16" y="154" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hil-ah-ajU" firstAttribute="trailing" secondItem="eBU-IS-syl" secondAttribute="trailing" constant="16" id="CJX-Bl-LDR"/>
+                            <constraint firstItem="eBU-IS-syl" firstAttribute="top" secondItem="ZrT-hP-v0K" secondAttribute="bottom" constant="16" id="F8I-7C-StU"/>
+                            <constraint firstItem="ZrT-hP-v0K" firstAttribute="top" secondItem="tho-vi-Nkc" secondAttribute="bottom" constant="16" id="JJc-M0-aJR"/>
+                            <constraint firstItem="tho-vi-Nkc" firstAttribute="top" secondItem="Hil-ah-ajU" secondAttribute="top" constant="16" id="cRL-cy-H55"/>
+                            <constraint firstItem="ZrT-hP-v0K" firstAttribute="leading" secondItem="Hil-ah-ajU" secondAttribute="leading" constant="16" id="ef6-YT-zGF"/>
+                            <constraint firstItem="eBU-IS-syl" firstAttribute="leading" secondItem="Hil-ah-ajU" secondAttribute="leading" constant="16" id="j2C-e4-zT0"/>
+                            <constraint firstItem="tho-vi-Nkc" firstAttribute="leading" secondItem="Hil-ah-ajU" secondAttribute="leading" constant="16" id="nv0-bO-Hyp"/>
+                            <constraint firstItem="Hil-ah-ajU" firstAttribute="trailing" secondItem="ZrT-hP-v0K" secondAttribute="trailing" constant="16" id="pT8-sT-Fhd"/>
+                            <constraint firstItem="Hil-ah-ajU" firstAttribute="trailing" secondItem="tho-vi-Nkc" secondAttribute="trailing" constant="16" id="wff-Np-Kzk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hil-ah-ajU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="House Details" id="79D-J5-OQ2"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="ZrT-hP-v0K" id="Kvh-62-HEZ"/>
+                        <outlet property="houseLabel" destination="eBU-IS-syl" id="Sgx-bx-8cP"/>
+                        <outlet property="nameLabel" destination="tho-vi-Nkc" id="VrG-06-dbm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WvK-Fd-BED" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="-564"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e8O-Di-hWM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m2f-by-DWL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O2N-tf-gKz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YUW-bb-XTx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VvH-MY-YWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+</document>
